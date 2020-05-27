@@ -23,8 +23,8 @@ After you finish defining the `change` method, run the migrations by running
 ## Adding a Column
 
 The next thing we will do is add a couple of columns to the `students` table we
-just created. To do this, we will create a second migration file. *We cannot add
-these columns to the existing file.* Let's call our new file
+just created. To do this, we will create a second migration file. _We cannot add
+these columns to the existing file._ Let's call our new file
 `02_add_grade_and_birthdate_to_students.rb`. It should live in `db/migrate` just
 like the first migration.
 
@@ -47,7 +47,7 @@ stored your birthdate data as a `string`. It would be much easier to work with
 if the column type was `datetime` instead. Let's fix that.
 
 Finally, we will change a column type, `string` to `datetime`. Same as before,
-you'll have to *create another migration file*. This time call it
+you'll have to _create another migration file_. This time call it
 `03_change_datatype_for_birthdate.rb`. Once again, name the class the same name
 as the file but with capital letters instead of underscores:
 `ChangeDatatypeForBirthdate`.
@@ -58,7 +58,7 @@ This migration will have the same setup as the last. Be sure to use the
 
 ## Active Record 5.x Migration Syntax
 
-***NOTE***: As of Active Record 5.x, we can no longer inherit directly from
+**_NOTE_**: As of Active Record 5.x, we can no longer inherit directly from
 `ActiveRecord::Migration` and must instead specify which version of Active
 Record / Rails the migration was written for. If we were writing a migration for
 Active Record 5.1, we would inherit from `ActiveRecord::Migration[5.1]`. Don't
